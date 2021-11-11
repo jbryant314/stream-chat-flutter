@@ -572,9 +572,9 @@ class _MessageListViewState extends State<MessageListView> {
                         !isNextUserSame ||
                         isThread ||
                         isDeleted) {
-                      return const SizedBox(height: 8);
+                      return const SizedBox(height: 0);
                     }
-                    return const SizedBox(height: 2);
+                    return const SizedBox(height: 0);
                   },
                   itemBuilder: (context, i) {
                     if (i == itemCount - 1) {
