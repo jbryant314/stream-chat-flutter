@@ -67,26 +67,26 @@ class AttachmentActionsModal extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  _buildButton(
-                    context,
-                    context.translations.replyLabel,
-                    StreamSvgIcon.iconCurveLineLeftUp(
-                      size: 24,
-                      color: theme.colorTheme.textLowEmphasis,
-                    ),
-                    () {
-                      Navigator.pop(context, ReturnActionType.reply);
-                    },
-                  ),
-                  _buildButton(
-                    context,
-                    context.translations.showInChatLabel,
-                    StreamSvgIcon.eye(
-                      size: 24,
-                      color: theme.colorTheme.textHighEmphasis,
-                    ),
-                    onShowMessage,
-                  ),
+                  // _buildButton(
+                  //   context,
+                  //   context.translations.replyLabel,
+                  //   StreamSvgIcon.iconCurveLineLeftUp(
+                  //     size: 24,
+                  //     color: theme.colorTheme.textLowEmphasis,
+                  //   ),
+                  //   () {
+                  //     Navigator.pop(context, ReturnActionType.reply);
+                  //   },
+                  // ),
+                  // _buildButton(
+                  //   context,
+                  //   context.translations.showInChatLabel,
+                  //   StreamSvgIcon.eye(
+                  //     size: 24,
+                  //     color: theme.colorTheme.textHighEmphasis,
+                  //   ),
+                  //   onShowMessage,
+                  // ),
                   _buildButton(
                     context,
                     message.attachments[currentIndex].type == 'video'
